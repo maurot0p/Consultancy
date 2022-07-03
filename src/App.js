@@ -1,24 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+
+import * as React from 'react';
+import ProductCategories from './views/ProductCategories';
+import ProductSmokingHero from './views/ProductSmokingHero';
+import AppFooter from './views/AppFooter';
+import ProductHero from './views/ProductHero';
+import ProductValues from './views/ProductValues';
+import ProductHowItWorks from './views/ProductHowItWorks';
+import ProductCTA from './views/ProductCTA';
+import AppAppBar from './views/AppAppBar';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+    <AppAppBar />
+    <ProductHero />
+    <ProductValues />
+    <ProductCategories />
+    <ProductHowItWorks />
+    <ProductCTA />
+    <ProductSmokingHero />
+    <AppFooter />
+  </React.Fragment>
   );
 }
 
